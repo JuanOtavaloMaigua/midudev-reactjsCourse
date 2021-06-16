@@ -1,0 +1,14 @@
+:root{
+    --results-columns: 2;
+}
+
+.ListOfGifs{
+    column-count: var(--results-columns);
+    column-gap: 0px;
+}
+
+.ListOfGifs-item{
+    -webkit-column-break-inside: avoid;
+    page-break-inside: avoid;
+    display: inline-block;
+}

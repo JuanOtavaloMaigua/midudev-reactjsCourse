@@ -3,9 +3,8 @@
     border-radius: 6px;
     display: flex;
     margin: 16px;
-    width: 100%;
+    width: 50%;
     flex-direction: column;
-    padding: 12px;
     color: #fff;
     text-decoration: none;
 }
