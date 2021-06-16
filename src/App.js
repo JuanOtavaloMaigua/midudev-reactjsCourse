@@ -11,8 +11,8 @@ export default function App() {
   return (
     <div className="App">
       <section className="App-content">
-        <Link to="/">
-          <img src='/logo.svg' alt="GiffyLogo"/>
+        <Link to="/" className="App-content-logo">
+          <img src='/logo.jpg' alt="GiffyLogo"/>
         </Link>
 
         <Route 
