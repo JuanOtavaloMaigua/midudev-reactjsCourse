@@ -4,12 +4,14 @@
     grid-template-rows: repeat(2);
     color: #fff;
     text-decoration: none;
+    margin-top: 10px;
 }
 
 .Gif img{
     width: 100%;
     grid-area: 1/1/2/2;
-    object-fit: contain;
+    object-fit: cover;
+
 }
 
 .Gif h4{

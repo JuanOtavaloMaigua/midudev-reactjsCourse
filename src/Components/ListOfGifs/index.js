@@ -10,7 +10,8 @@ export default function ListOfGifs({ gifs }){
         <Gif title={title} 
               id={id} 
               url={url}
-              key={id}/>  
+              key={id}
+              />  
         ))
       }
     </div>

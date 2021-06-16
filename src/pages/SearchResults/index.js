@@ -1,22 +1,12 @@
 import React, { useState, useEffect } from 'react'
 import ListOfGifs from '../../Components/ListOfGifs'
 import getGifs from '../../services/getGifs'
+import { useGifs } from '../../hooks/useGifs'
 
 export default function SearchResults({ params }){
     const { keyword } = params
-    const [loading, setLoading] = useState(false)
-    const [gifs, setGifs] =  useState([])
- 
-    useEffect(function(){
-      setLoading(true)
-      getGifs({keyword}).then(gifs => 
-        {
-          setGifs(gifs)
-          setLoading(false)
-        })
-    },[keyword]) // esta dependencia dice que cada vez que cambia keyword debe susceder el efecto
-
-
+    const { loading, gifs } = useGifs({ keyword })
+    
     return(
         <div>
             {loading 
@@ -25,4 +15,4 @@ export default function SearchResults({ params }){
             }
         </div>
     )
-}
+} 
